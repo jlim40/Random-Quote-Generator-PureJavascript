@@ -1,21 +1,23 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0">
 	<title>Inspirational Quote Generator</title>
 	<meta name="description" content="Random Inspirational Quote Generator">
 	<meta name="author" content="Jason Lim">
 
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
 	<div id="container">
 		<h1>Inspirational Quote Generator</h1>
-		<p id="quote">1</p>
-		<p id="name">2</p>
-		<div class="inner">
-			<button onclick="newQuote()">Quote me!</button>
+		<div class="quoteContainer">
+			<p id="quote"></p>
+			<p id="name"></p>
 		</div>
+		<button onclick="newQuote()"><span>Quote me</span></button>
 	</div>
 	<script src="js/scripts.js"></script>
 </body>

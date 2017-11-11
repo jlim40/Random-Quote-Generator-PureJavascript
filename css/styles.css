@@ -1,28 +1,72 @@
+* {
+margin: 0;
+padding: 0;
+}
 body {
 	background-color: #fff;
+	font-family: 'Barlow Condensed', sans-serif;
 }
 #container {
-	position: relative;
 	width: 600px;
-	height: 400px;
-	border: 1px black solid;
-	margin: 55 auto;
+	margin: 100 auto;
 	text-align: center;
 }
-h1 {
-	border: 1px brown solid;
+.quoteContainer {
+	height: 130px;
+	padding: 20px;
+	font-size: 20px;
 }
-p:first-of-type {
-	color:  red;
-	border: 1px red solid;
+h1 {
+	margin-bottom: 40px;
+	font-size: 40px;
 }
 p:last-of-type {
-	color: blue;
-	border: 1px blue solid;
+	margin-top: 25px;
+	font-weight: bold;
 }
 button {
+	cursor: pointer;
+	color: #FF2424;
+	background-color: #fff;
+	font-size: 24px;
+	padding: 7 18px;
+	width: 190px;
+	border-radius: 4px;
+	border: 2px solid #FF2424;
+}
+button > span {
+	transition: 0s;
+	display: block;
+	position: relative;
+}
+button > span:before {
+	content: '\00bb';
 	position: absolute;
-	border: 1px solid black;
-	bottom: 20px;
-	left: 44%;
+	left: -15px;
+	transition: 0.5s;
+	opacity: 0;
+	margin: 0 5px;
+}
+button > span:after {
+	content: '\00ab';
+	position: absolute;
+	right: -15px;
+	transition: 0.5s;
+	opacity: 0;
+	margin: 0 5px;
+}
+button:hover span:before {
+	opacity: 1;
+	left: 0;
+}
+button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+button:focus {
+	outline: none;
+}
+button:active {
+	background-color: #F92121;
+	color: #fff;
 }
