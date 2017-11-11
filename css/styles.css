@@ -7,18 +7,19 @@ body {
 	font-family: 'Barlow Condensed', sans-serif;
 }
 #container {
-	width: 600px;
-	margin: 100 auto;
+	width: 80%;
+	margin: 10% auto;
 	text-align: center;
 }
-.quoteContainer {
-	height: 130px;
+#quoteContainer {
+	min-height: 130px;
 	padding: 20px;
 	font-size: 20px;
 }
 h1 {
 	margin-bottom: 40px;
 	font-size: 40px;
+	color: red;
 }
 p:last-of-type {
 	margin-top: 25px;
@@ -69,4 +70,19 @@ button:focus {
 button:active {
 	background-color: #F92121;
 	color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+	h1 {
+		margin: 10% auto;
+		margin-bottom: 18%;
+		color: black;
+	}
+	#container {
+		margin-top: 15%;
+		width: 95%;
+	}
+	#quoteContainer {
+		min-height: 170px;
+	}
 }

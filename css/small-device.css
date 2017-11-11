@@ -1,0 +1,22 @@
+/*
+This is for small devices that have less than width: 450px;
+*/
+
+h1 {
+	margin: 10% auto;
+	margin-bottom: 18%;
+	color: red;
+	font-size: 70px;
+}
+#container {
+	margin-top: 15%;
+	width: 95%;
+}
+#quoteContainer {
+	min-height: 45%;
+	font-size: 65px;
+}
+button {
+	width: 50%;
+	font-size: 40px;
+}
