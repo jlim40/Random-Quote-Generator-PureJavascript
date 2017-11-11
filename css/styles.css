@@ -1,0 +1,28 @@
+body {
+	background-color: #fff;
+}
+#container {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	border: 1px black solid;
+	margin: 55 auto;
+	text-align: center;
+}
+h1 {
+	border: 1px brown solid;
+}
+p:first-of-type {
+	color:  red;
+	border: 1px red solid;
+}
+p:last-of-type {
+	color: blue;
+	border: 1px blue solid;
+}
+button {
+	position: absolute;
+	border: 1px solid black;
+	bottom: 20px;
+	left: 44%;
+}
