@@ -1,4 +1,3 @@
 # RandomQuoteGenrator-PureJavascript
 
- A random quote generator written with only html, css, and Javascript.
- 
+ A random quote generator written with only html, css, and Javascript!
